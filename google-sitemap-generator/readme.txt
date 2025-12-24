@@ -1,9 +1,9 @@
 === XML Sitemap Generator for Google ===
 Contributors: auctollo
-Tags: sitemaps, video sitemap, news sitemap, html sitemap, image sitemap
+Tags: SEO, xml sitemap, video sitemap, news sitemap, html sitemap
 Requires at least: 4.6
-Tested up to: 6.5
-Stable tag: 4.1.21
+Tested up to: 6.9
+Stable tag: 4.1.22
 Requires PHP: 5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Generate multiple types of sitemaps to improve SEO and get your website indexed 
 
 == Description ==
 
-Generate XML, HTML, RSS sitemaps for your website with ease using the XML Sitemap Generator for Google. This plugin enables you to improve your SEO rankings by creating page, news, video, HTML, and RSS sitemaps. It also supports custom post types and taxonomies, allowing you to ensure that all of your content is being indexed by search engines. With a user-friendly interface, you can easily configure the plugin to suit your needs and generate sitemaps in just a few clicks. Keep your website up-to-date and make sure that search engines are aware of all of your content by using the XML Sitemap Generator for Google.
+Generate XML and HTML sitemaps for your website with ease using the XML Sitemap Generator for Google. This plugin enables you to improve your SEO rankings by creating page, image, news, video, HTML, and RSS sitemaps. It also supports custom post types and taxonomies, allowing you to ensure that all of your content is being indexed by search engines. With a user-friendly interface, you can easily configure the plugin to suit your needs and generate sitemaps in just a few clicks. Keep your website up-to-date and make sure that search engines are aware of all of your content by using the XML Sitemap Generator for Google.
 
 The plugin supports all kinds of WordPress generated pages as well as custom URLs. Additionally it notifies all major search engines every time you create a post about the new content.
 
@@ -100,6 +100,9 @@ Please post your question at the [WordPress support forum](https://wordpress.org
 
 
 == Changelog ==
+
+= 4.1.22 (2025-12-23) =
+* Fixed preventing unauthenticated users from modifying plugin settings by enforcing proper permission and security‑token checks.
 
 = 4.1.21 (2024-04-21) =
 * Fixed a regression with saving post/page exclusions.
@@ -626,5 +629,5 @@ The plugin comes with various translations, please refer to the [WordPress Codex
 
 == Upgrade Notice ==
 
-= 4.1.18 =
-Thank you for using XML Sitemap Generator! This release resolves critical issues reported in the support forum. Thank you to all who reported issues! Make sure to "Enable auto-updates!" 
+= 4.1.22 =
+Critical Security Fix: Resolved a flaw where certain actions could be triggered without verifying the requester’s identity, privileges, or a valid security token.
